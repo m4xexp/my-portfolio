@@ -1,17 +1,19 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.js
-    siteTitle: `Jodie`,
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
+    siteTitle: `Parames A.`,
+    siteTitleAlt: `Parames - Gatsby Portfolio`,
     siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://jodie.lekoarts.de`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteUrl: `https://parames.journey.me`,
+    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. 
+                      Includes adaptive image grids powered by CSS grid and automatic image integration 
+                      into projects.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `@lekoarts_de`,
@@ -56,7 +58,7 @@ module.exports = {
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#b75e09`,
+        theme_color: `#b75e09`,
         display: `standalone`,
         icons: [
           {
@@ -82,4 +84,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
